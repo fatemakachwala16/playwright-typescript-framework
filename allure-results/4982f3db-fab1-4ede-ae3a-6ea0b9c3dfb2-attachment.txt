@@ -1,6 +1,0 @@
-[INFO] added first name to 'Juwan'
-[INFO] added last name to 'Heller'
-[INFO] added employee id to '8881'
-[INFO] added userName name to 'juwanheller'
-[INFO] added password to 'oYCK6fJNuYPK'
-[INFO] added confirm password to 'oYCK6fJNuYPK'

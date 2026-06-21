@@ -1,2 +1,0 @@
-[INFO] Updating first name to 'Nat'
-[SUCCESS] First name field updated successfully

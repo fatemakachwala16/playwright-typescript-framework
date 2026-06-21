@@ -1,4 +1,0 @@
-[INFO] Updating first name to 'Wanda'
-[SUCCESS] First name field updated successfully
-[INFO] Updating last name to 'Klein'
-[SUCCESS] Last name field updated successfully

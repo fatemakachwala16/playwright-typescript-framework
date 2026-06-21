@@ -1,4 +1,0 @@
-[INFO] Updating first name to 'Lance'
-[SUCCESS] First name field updated successfully
-[INFO] Updating last name to 'Doyle'
-[SUCCESS] Last name field updated successfully

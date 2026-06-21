@@ -1,5 +1,0 @@
-[INFO] added first name to 'Clifford'
-[INFO] added last name to 'Cremin'
-[INFO] added userName name to 'cliffordcremin'
-[INFO] added password to 'ZKY1G1fy2Pcu'
-[INFO] added confirm password to 'ZKY1G1fy2Pcu'

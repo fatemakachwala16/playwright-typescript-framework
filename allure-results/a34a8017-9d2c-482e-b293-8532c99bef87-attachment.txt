@@ -1,5 +1,0 @@
-[INFO] added first name to 'Eula'
-[INFO] added last name to 'Cormier'
-[INFO] added userName name to 'eulacormier'
-[INFO] added password to 'TqRzJHBUycO8'
-[INFO] added confirm password to 'TqRzJHBUycO8'

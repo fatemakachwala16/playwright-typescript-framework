@@ -1,2 +1,0 @@
-[INFO] Updating first name to 'Lorene'
-[SUCCESS] First name field updated successfully
