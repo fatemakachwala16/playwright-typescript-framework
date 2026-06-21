@@ -188,5 +188,8 @@ The framework is integrated with **GitHub Actions** to automatically execute Pla
 
 **Fatema Kachwala**
 
-## Disclaimer
-This repository demonstrates a Playwright + TypeScript automation framework using the publicly available OrangeHRM demo application for educational and portfolio purposes.
+---
+
+## 📄 Disclaimer
+
+This project is intended for **educational and portfolio purposes only**. It uses the publicly available OrangeHRM demo application to demonstrate Playwright automation practices and is **not affiliated with or endorsed by OrangeHRM**.
