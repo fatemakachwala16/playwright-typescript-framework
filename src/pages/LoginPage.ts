@@ -11,8 +11,10 @@ export class LoginPage extends BasePage {
     super(page);
     this.username = page.getByPlaceholder("Username");
     this.userPassword = page.getByPlaceholder("Password");
-    this.signInButton = page.getByRole("button", { name: "Login" })
-    this.dashboardPageHeading = page.getByRole('heading', { name: 'Dashboard' })
+    this.signInButton = page.getByRole("button", { name: "Login" });
+    this.dashboardPageHeading = page.getByRole("heading", {
+      name: "Dashboard",
+    });
   }
 
   async goTo() {
@@ -33,14 +35,14 @@ export class LoginPage extends BasePage {
   }
 
   async checkDashboardPageIsLoaded() {
-    await expect(this.dashboardPageHeading).toBeVisible()
+    await expect(this.dashboardPageHeading).toBeVisible();
   }
 
   async checkInvalidCredentialsErrorIsVisible() {
-    await expect(this.page.getByText('Invalid credentials')).toBeVisible()
+    await expect(this.page.getByText("Invalid credentials")).toBeVisible();
   }
 
   async checkRequiredFieldErrorIsVisible() {
-    await expect(this.page.getByText('Required')).toBeVisible()
+    await expect(this.page.getByText("Required")).toBeVisible();
   }
 }

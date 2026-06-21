@@ -1,8 +1,18 @@
-
-# Playwright
+# Node modules
 node_modules/
-/test-results/
-/playwright-report/
-/blob-report/
-/playwright/.cache/
-/playwright/.auth/
+
+# Playwright reports
+playwright-report/
+test-results/
+
+# Allure reports
+allure-results/
+allure-report/
+
+# Screenshots, videos, traces 
+screenshots/
+videos/
+traces/
+
+# Playwright authentication state (contains session data)
+playwright/.auth/
