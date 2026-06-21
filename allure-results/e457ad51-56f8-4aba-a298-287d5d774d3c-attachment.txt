@@ -1,0 +1,5 @@
+[INFO] added first name to 'Sophie'
+[INFO] added last name to 'Weber'
+[INFO] added userName name to 'sophieweber'
+[INFO] added password to 'IWsKNZNCR9f5'
+[INFO] added confirm password to 'IWsKNZNCR9f5'

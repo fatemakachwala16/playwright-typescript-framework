@@ -1,0 +1,3 @@
+[INFO] added first name to 'Jess'
+[INFO] added last name to 'Renner'
+[INFO] added userName name to 'jessrenner'

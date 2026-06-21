@@ -1,0 +1,5 @@
+[INFO] added first name to 'Anya'
+[INFO] added last name to 'Schowalter'
+[INFO] added userName name to 'anyaschowalter'
+[INFO] added password to 'JOliYgOxpyAT'
+[INFO] added confirm password to 'JOliYgOxpyAT'

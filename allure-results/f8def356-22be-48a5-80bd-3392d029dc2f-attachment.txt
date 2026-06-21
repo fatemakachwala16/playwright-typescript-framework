@@ -1,0 +1,2 @@
+[INFO] Updating last name to 'Hermann'
+[SUCCESS] Last name field updated successfully

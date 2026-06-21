@@ -1,0 +1,5 @@
+[INFO] added first name to 'Reece'
+[INFO] added last name to 'Boyer'
+[INFO] added userName name to 'reeceboyer'
+[INFO] added password to '8L732G8kNRaX'
+[INFO] added confirm password to '8L732G8kNRaX'

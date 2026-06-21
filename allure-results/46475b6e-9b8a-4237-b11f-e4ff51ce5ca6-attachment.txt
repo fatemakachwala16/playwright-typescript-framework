@@ -1,0 +1,4 @@
+[INFO] Updating first name to 'Angelina'
+[SUCCESS] First name field updated successfully
+[INFO] Updating last name to 'DuBuque'
+[SUCCESS] Last name field updated successfully
