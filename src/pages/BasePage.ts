@@ -7,4 +7,9 @@ export class BasePage {
     await this.page.waitForLoadState('networkidle')
   }
 
+  async clickAddButton()
+  {
+    await this.page.getByRole('button', { name: 'Add' }).click()
+  }
+
 }

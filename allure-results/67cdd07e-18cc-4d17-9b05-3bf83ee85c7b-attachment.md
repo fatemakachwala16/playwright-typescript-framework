@@ -1,0 +1,60 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: PIM\pim.spec.ts >> My PIM Page Tests >> Verify last name is updated successfully @regression
+- Location: tests\PIM\pim.spec.ts:19:9
+
+# Error details
+
+```
+TypeError: _PIMPage.PIMPage is not a constructor
+```
+
+# Test source
+
+```ts
+  1  | import { test as base, expect } from '@playwright/test'
+  2  | import { LoginPage } from '../../src/pages/LoginPage'
+  3  | import { LogoutPage } from '../../src/pages/LogoutPage'
+  4  | import {MyInfoPage} from '../../src/pages/MyInfoPage'
+  5  | import { PIMPage } from '../../src/pages/PIMPage'
+  6  | import {users} from '../../src/testdata/users'
+  7  | 
+  8  | type MyFixtures = {
+  9  |     loginPage: LoginPage
+  10 |     logoutPage: LogoutPage
+  11 |     myInfoPage: MyInfoPage
+  12 |     pimPage: PIMPage
+  13 |     users: typeof users
+  14 | }
+  15 | 
+  16 | export const test = base.extend<MyFixtures>({
+  17 |     loginPage: async ({ page }, use) => {
+  18 |         const loginPage = new LoginPage(page)  
+  19 |         await use(loginPage)
+  20 |     },
+  21 |     logoutPage: async ({ page }, use) => {
+  22 |         const logoutPage = new LogoutPage(page)
+  23 |         await use(logoutPage)
+  24 |     },
+  25 |     myInfoPage: async ({ page }, use) => {
+  26 |         const myInfoPage = new MyInfoPage(page)
+  27 |         await use(myInfoPage)
+  28 |     },
+  29 |     pimPage: async ({ page }, use) => {
+> 30 |         const pimPage = new PIMPage(page)
+     |                         ^ TypeError: _PIMPage.PIMPage is not a constructor
+  31 |         await use(pimPage)
+  32 |     },
+  33 |     users: async ({}, use) => {
+  34 |         await use(users)
+  35 |     }
+  36 | })
+  37 | 
+  38 | export { expect }
+```

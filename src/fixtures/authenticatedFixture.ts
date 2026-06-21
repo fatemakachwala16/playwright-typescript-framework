@@ -1,9 +1,9 @@
-import { test as base } from './baseFixture'
+import { test as base } from "./baseFixture";
 
-export const test = base
+export const test = base;
 
 test.use({
-  storageState: 'playwright/.auth/admin.json',
-})
+  storageState: "playwright/.auth/admin.json",
+});
 
-export { expect } from '@playwright/test';
+export { expect } from "@playwright/test";

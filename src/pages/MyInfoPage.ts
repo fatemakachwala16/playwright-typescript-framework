@@ -13,7 +13,6 @@ export class MyInfoPage extends BasePage {
     private readonly dateOfBirthInput: Locator
     private readonly successToast: Locator
     private readonly saveButton: Locator
-    private readonly addButton: Locator
     private readonly fileInput: Locator
     private readonly saveAttachmentButton: Locator
 
@@ -28,7 +27,6 @@ export class MyInfoPage extends BasePage {
         this.dateOfBirthInput = page.locator('input[placeholder="yyyy-dd-mm"]').last()
         this.successToast = page.getByText('Successfully Updated')
         this.saveButton = page.locator('form').filter({ hasText: 'Employee Full NameEmployee' }).getByRole('button')
-        this.addButton = page.getByRole('button', { name: 'Add' })
         this.fileInput = page.locator('input[type="file"]')
         this.saveAttachmentButton = page.getByRole('button', { name: 'Save' }).last()
     }
@@ -83,7 +81,7 @@ export class MyInfoPage extends BasePage {
     }
 
     async uploadFile(fileName: string) {
-        await this.addButton.click()
+        await this.clickAddButton()
         await this.fileInput.setInputFiles(FileUtils.getFilePath(fileName))
         await this.saveAttachmentButton.click();
     }
