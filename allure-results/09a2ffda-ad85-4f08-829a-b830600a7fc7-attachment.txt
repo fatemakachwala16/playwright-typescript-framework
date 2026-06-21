@@ -1,0 +1,4 @@
+[INFO] Updating first name to 'Jake'
+[SUCCESS] First name field updated successfully
+[INFO] Updating last name to 'Koepp'
+[SUCCESS] Last name field updated successfully

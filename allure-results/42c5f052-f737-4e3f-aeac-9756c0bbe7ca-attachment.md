@@ -1,0 +1,434 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: myInfo\myInfo.spec.ts >> My Info Page Tests >> Verify check radio button is working @regression
+- Location: tests\myInfo\myInfo.spec.ts:25:9
+
+# Error details
+
+```
+Test timeout of 30000ms exceeded.
+```
+
+```
+Error: locator.check: Test timeout of 30000ms exceeded.
+Call log:
+  - waiting for locator('label').filter({ hasText: 'Female' })
+    - locator resolved to <label class="" data-v-7ef819fd="">…</label>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div data-v-d5bfe35b="" class="oxd-form-loader">…</div> intercepts pointer events
+    - retrying click action
+    - waiting 20ms
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <div data-v-d5bfe35b="" class="oxd-form-loader">…</div> intercepts pointer events
+  2 × retrying click action
+      - waiting 100ms
+      - waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div data-v-c286b6e5="" class="oxd-topbar-header">…</div> from <div data-v-edf1c7c7="" class="oxd-layout-navigation">…</div> subtree intercepts pointer events
+  2 × retrying click action
+      - waiting 500ms
+      - waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div data-v-d5bfe35b="" class="oxd-form-loader">…</div> intercepts pointer events
+  2 × retrying click action
+      - waiting 500ms
+      - waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div data-v-c286b6e5="" class="oxd-topbar-header">…</div> from <div data-v-edf1c7c7="" class="oxd-layout-navigation">…</div> subtree intercepts pointer events
+  2 × retrying click action
+      - waiting 500ms
+      - waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div data-v-d5bfe35b="" class="oxd-form-loader">…</div> intercepts pointer events
+  - retrying click action
+    - waiting 500ms
+
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - generic:
+    - complementary [ref=e4]:
+      - navigation "Sidepanel" [ref=e5]:
+        - generic [ref=e6]:
+          - link "client brand banner" [ref=e7] [cursor=pointer]:
+            - /url: https://www.orangehrm.com/
+            - img "client brand banner" [ref=e9]
+          - text: 
+        - generic [ref=e10]:
+          - generic [ref=e11]:
+            - generic [ref=e12]:
+              - textbox "Search" [ref=e15]
+              - button "" [ref=e16] [cursor=pointer]:
+                - generic [ref=e17]: 
+            - separator [ref=e18]
+          - list [ref=e19]:
+            - listitem [ref=e20]:
+              - link "Admin" [ref=e21] [cursor=pointer]:
+                - /url: /web/index.php/admin/viewAdminModule
+                - generic [ref=e24]: Admin
+            - listitem [ref=e25]:
+              - link "PIM" [ref=e26] [cursor=pointer]:
+                - /url: /web/index.php/pim/viewPimModule
+                - generic [ref=e40]: PIM
+            - listitem [ref=e41]:
+              - link "Leave" [ref=e42] [cursor=pointer]:
+                - /url: /web/index.php/leave/viewLeaveModule
+                - generic [ref=e45]: Leave
+            - listitem [ref=e46]:
+              - link "Time" [ref=e47] [cursor=pointer]:
+                - /url: /web/index.php/time/viewTimeModule
+                - generic [ref=e53]: Time
+            - listitem [ref=e54]:
+              - link "Recruitment" [ref=e55] [cursor=pointer]:
+                - /url: /web/index.php/recruitment/viewRecruitmentModule
+                - generic [ref=e61]: Recruitment
+            - listitem [ref=e62]:
+              - link "My Info" [ref=e63] [cursor=pointer]:
+                - /url: /web/index.php/pim/viewMyDetails
+                - generic [ref=e69]: My Info
+            - listitem [ref=e70]:
+              - link "Performance" [ref=e71] [cursor=pointer]:
+                - /url: /web/index.php/performance/viewPerformanceModule
+                - generic [ref=e79]: Performance
+            - listitem [ref=e80]:
+              - link "Dashboard" [ref=e81] [cursor=pointer]:
+                - /url: /web/index.php/dashboard/index
+                - generic [ref=e84]: Dashboard
+            - listitem [ref=e85]:
+              - link "Directory" [ref=e86] [cursor=pointer]:
+                - /url: /web/index.php/directory/viewDirectory
+                - generic [ref=e89]: Directory
+            - listitem [ref=e90]:
+              - link "Maintenance" [ref=e91] [cursor=pointer]:
+                - /url: /web/index.php/maintenance/viewMaintenanceModule
+                - generic [ref=e95]: Maintenance
+            - listitem [ref=e96]:
+              - link "Claim" [ref=e97] [cursor=pointer]:
+                - /url: /web/index.php/claim/viewClaimModule
+                - img [ref=e100]
+                - generic [ref=e104]: Claim
+            - listitem [ref=e105]:
+              - link "Buzz" [ref=e106] [cursor=pointer]:
+                - /url: /web/index.php/buzz/viewBuzz
+                - generic [ref=e109]: Buzz
+    - banner [ref=e110]:
+      - generic [ref=e111]:
+        - generic [ref=e112]:
+          - text: 
+          - heading "PIM" [level=6] [ref=e114]
+        - link "Upgrade" [ref=e116]:
+          - /url: https://orangehrm.com/open-source/upgrade-to-advanced
+          - button "Upgrade" [ref=e117] [cursor=pointer]: Upgrade
+        - list [ref=e123]:
+          - listitem [ref=e124]:
+            - generic [ref=e125] [cursor=pointer]:
+              - img "profile picture" [ref=e126]
+              - paragraph [ref=e127]: Casimir Admin
+              - generic [ref=e128]: 
+      - navigation "Topbar Menu" [ref=e130]:
+        - list [ref=e131]:
+          - button "" [ref=e133] [cursor=pointer]:
+            - generic [ref=e134]: 
+  - generic [ref=e135]:
+    - generic [ref=e139]:
+      - generic [ref=e140]:
+        - generic [ref=e141]:
+          - heading "Casimir Admin" [level=6] [ref=e143]
+          - img "profile picture" [ref=e146] [cursor=pointer]
+        - tablist [ref=e147]:
+          - tab "Personal Details" [ref=e148]:
+            - link "Personal Details" [ref=e149] [cursor=pointer]:
+              - /url: /web/index.php/pim/viewPersonalDetails/empNumber/7
+          - tab "Contact Details" [ref=e150]:
+            - link "Contact Details" [ref=e151] [cursor=pointer]:
+              - /url: /web/index.php/pim/contactDetails/empNumber/7
+          - tab "Emergency Contacts" [ref=e152]:
+            - link "Emergency Contacts" [ref=e153] [cursor=pointer]:
+              - /url: /web/index.php/pim/viewEmergencyContacts/empNumber/7
+          - tab "Dependents" [ref=e154]:
+            - link "Dependents" [ref=e155] [cursor=pointer]:
+              - /url: /web/index.php/pim/viewDependents/empNumber/7
+          - tab "Immigration" [ref=e156]:
+            - link "Immigration" [ref=e157] [cursor=pointer]:
+              - /url: /web/index.php/pim/viewImmigration/empNumber/7
+          - tab "Job" [ref=e158]:
+            - link "Job" [ref=e159] [cursor=pointer]:
+              - /url: /web/index.php/pim/viewJobDetails/empNumber/7
+          - tab "Salary" [ref=e160]:
+            - link "Salary" [ref=e161] [cursor=pointer]:
+              - /url: /web/index.php/pim/viewSalaryList/empNumber/7
+          - tab "Report-to" [ref=e162]:
+            - link "Report-to" [ref=e163] [cursor=pointer]:
+              - /url: /web/index.php/pim/viewReportToDetails/empNumber/7
+          - tab "Qualifications" [ref=e164]:
+            - link "Qualifications" [ref=e165] [cursor=pointer]:
+              - /url: /web/index.php/pim/viewQualifications/empNumber/7
+          - tab "Memberships" [ref=e166]:
+            - link "Memberships" [ref=e167] [cursor=pointer]:
+              - /url: /web/index.php/pim/viewMemberships/empNumber/7
+      - generic [ref=e168]:
+        - generic [ref=e169]:
+          - heading "Personal Details" [level=6] [ref=e170]
+          - separator [ref=e171]
+          - generic [ref=e172]:
+            - generic [ref=e179]:
+              - generic [ref=e181]: Employee Full Name*
+              - generic [ref=e182]:
+                - textbox "First Name" [ref=e185]: Casimir
+                - textbox "Middle Name" [ref=e188]: S
+                - textbox "Last Name" [ref=e191]: Admin
+            - separator [ref=e192]
+            - generic [ref=e193]:
+              - generic [ref=e194]:
+                - generic [ref=e196]:
+                  - generic [ref=e198]: Employee Id
+                  - textbox [ref=e200]: muser
+                - generic [ref=e202]:
+                  - generic [ref=e204]: Other Id
+                  - textbox [ref=e206]: "4957589"
+              - generic [ref=e207]:
+                - generic [ref=e209]:
+                  - generic [ref=e211]: Driver's License Number
+                  - textbox [ref=e213]: "56788"
+                - generic [ref=e215]:
+                  - generic [ref=e217]: License Expiry Date
+                  - generic [ref=e220]:
+                    - textbox "yyyy-dd-mm" [ref=e221]: 2023-18-10
+                    - generic [ref=e222] [cursor=pointer]: 
+            - separator [ref=e223]
+            - generic [ref=e224]:
+              - generic [ref=e225]:
+                - generic [ref=e227]:
+                  - generic [ref=e229]: Nationality
+                  - generic [ref=e232] [cursor=pointer]:
+                    - generic [ref=e233]: American
+                    - generic [ref=e235]: 
+                - generic [ref=e237]:
+                  - generic [ref=e239]: Marital Status
+                  - generic [ref=e242] [cursor=pointer]:
+                    - generic [ref=e243]: Single
+                    - generic [ref=e245]: 
+              - generic [ref=e246]:
+                - generic [ref=e248]:
+                  - generic [ref=e250]: Date of Birth
+                  - generic [ref=e253]:
+                    - textbox "yyyy-dd-mm" [ref=e254]: 3100-03-12
+                    - generic [ref=e255] [cursor=pointer]: 
+                - generic [ref=e257]:
+                  - generic [ref=e259]: Gender
+                  - generic [ref=e260]:
+                    - generic [ref=e264] [cursor=pointer]:
+                      - radio "Male" [ref=e265]
+                      - text: Male
+                    - generic [ref=e270] [cursor=pointer]:
+                      - radio "Female" [checked] [ref=e271]
+                      - text: Female
+            - separator [ref=e273]
+            - generic [ref=e274]:
+              - paragraph [ref=e275]: "* Required"
+              - button "Save" [ref=e276] [cursor=pointer]
+        - generic [ref=e277]:
+          - separator [ref=e278]
+          - generic [ref=e279]:
+            - heading "Custom Fields" [level=6] [ref=e280]
+            - separator [ref=e281]
+            - generic [ref=e282]:
+              - generic [ref=e284]:
+                - generic [ref=e286]:
+                  - generic [ref=e288]: Blood Type
+                  - generic [ref=e291] [cursor=pointer]:
+                    - generic [ref=e292]: A+
+                    - generic [ref=e294]: 
+                - generic [ref=e296]:
+                  - generic [ref=e298]: Test_Field
+                  - textbox [ref=e300]: "445"
+              - separator [ref=e301]
+              - button "Save" [ref=e303] [cursor=pointer]
+        - generic [ref=e304]:
+          - separator [ref=e305]
+          - generic [ref=e307]:
+            - heading "Attachments" [level=6] [ref=e308]
+            - button " Add" [ref=e309] [cursor=pointer]:
+              - generic [ref=e310]: 
+              - text: Add
+          - generic [ref=e311]:
+            - separator [ref=e312]
+            - generic [ref=e314]: (1) Record Found
+          - table [ref=e316]:
+            - rowgroup [ref=e317]:
+              - row " File Name Description Size Type Date Added Added By Actions" [ref=e318]:
+                - columnheader "" [ref=e319]:
+                  - generic [ref=e321] [cursor=pointer]:
+                    - checkbox "" [ref=e322]
+                    - generic [ref=e324]: 
+                - columnheader "File Name" [ref=e325]
+                - columnheader "Description" [ref=e326]
+                - columnheader "Size" [ref=e327]
+                - columnheader "Type" [ref=e328]
+                - columnheader "Date Added" [ref=e329]
+                - columnheader "Added By" [ref=e330]
+                - columnheader "Actions" [ref=e331]
+            - rowgroup [ref=e332]:
+              - row " test.png test 53.16 kB image/png 2024-06-02 Admin   " [ref=e334]:
+                - cell "" [ref=e335]:
+                  - generic [ref=e338] [cursor=pointer]:
+                    - checkbox "" [ref=e339]
+                    - generic [ref=e341]: 
+                - cell "test.png" [ref=e342]:
+                  - generic [ref=e343]: test.png
+                - cell "test" [ref=e344]:
+                  - generic [ref=e345]: test
+                - cell "53.16 kB" [ref=e346]:
+                  - generic [ref=e347]: 53.16 kB
+                - cell "image/png" [ref=e348]:
+                  - generic [ref=e349]: image/png
+                - cell "2024-06-02" [ref=e350]:
+                  - generic [ref=e351]: 2024-06-02
+                - cell "Admin" [ref=e352]:
+                  - generic [ref=e353]: Admin
+                - cell "  " [ref=e354]:
+                  - generic [ref=e355]:
+                    - button "" [ref=e356] [cursor=pointer]:
+                      - generic [ref=e357]: 
+                    - button "" [ref=e358] [cursor=pointer]:
+                      - generic [ref=e359]: 
+                    - button "" [ref=e360] [cursor=pointer]:
+                      - generic [ref=e361]: 
+    - generic [ref=e362]:
+      - paragraph [ref=e363]: OrangeHRM OS 5.8
+      - paragraph [ref=e364]:
+        - text: © 2005 - 2026
+        - link "OrangeHRM, Inc" [ref=e365] [cursor=pointer]:
+          - /url: http://www.orangehrm.com
+        - text: . All rights reserved.
+```
+
+# Test source
+
+```ts
+  1   | import { expect, Locator, Page } from "@playwright/test"
+  2   | import { BasePage } from "./BasePage"
+  3   | import { Logger } from '../utils/logger'
+  4   | import { FileUtils } from "../utils/fileUtils"
+  5   | 
+  6   | export class MyInfoPage extends BasePage {
+  7   |     private readonly myInfoLocator: Locator
+  8   |     private readonly personalDetailsHeading: Locator
+  9   |     private readonly firstName: Locator
+  10  |     private readonly lastName: Locator
+  11  |     private readonly femaleRadio: Locator
+  12  |     private readonly maritalStatusDropdown: Locator
+  13  |     private readonly dateOfBirthInput: Locator
+  14  |     private readonly successToast: Locator
+  15  |     private readonly saveButton: Locator
+  16  |     private readonly addButton: Locator
+  17  |     private readonly fileInput: Locator
+  18  |     private readonly saveAttachmentButton: Locator
+  19  | 
+  20  |     constructor(page: Page) {
+  21  |         super(page)
+  22  |         this.myInfoLocator = page.locator('a:has-text("My Info")')
+  23  |         this.personalDetailsHeading = page.getByRole('heading', { name: 'Personal Details' })
+  24  |         this.firstName = page.locator('input[placeholder="First Name"]')
+  25  |         this.lastName = page.locator('input[placeholder="Last Name"]')
+  26  |         this.femaleRadio = page.locator('label', { hasText: 'Female' });
+  27  |         this.maritalStatusDropdown = page.locator('.oxd-select-wrapper').last()
+  28  |         this.dateOfBirthInput = page.locator('input[placeholder="yyyy-dd-mm"]').last()
+  29  |         this.successToast = page.getByText('Successfully Updated')
+  30  |         this.saveButton = page.locator('form').filter({ hasText: 'Employee Full NameEmployee' }).getByRole('button')
+  31  |         this.addButton = page.getByRole('button', { name: 'Add' })
+  32  |         this.fileInput = page.locator('input[type="file"]')
+  33  |         this.saveAttachmentButton = page.getByRole('button', { name: 'Save' }).last()
+  34  |     }
+  35  | 
+  36  |     async goToTheDashboardPage() {
+  37  |         await this.page.goto('/web/index.php/dashboard/index')
+  38  |     }
+  39  | 
+  40  |     async goToTheMyInfoPage() {
+  41  |         await this.myInfoLocator.click()
+  42  |     }
+  43  | 
+  44  |     async checkIfPersonalDetailsIsVisible() {
+  45  |         await expect(this.personalDetailsHeading).toHaveText('Personal Details')
+  46  |         await this.waitForPageLoad()
+  47  |     }
+  48  | 
+  49  |     async updateFirstName(newFirstName: string) {
+  50  |         Logger.info(`Updating first name to '${newFirstName}'`)
+  51  |         await this.firstName.fill('')
+  52  |         await this.firstName.fill(newFirstName)
+  53  |         await expect(this.firstName).toHaveValue(newFirstName)
+  54  |         Logger.success('First name field updated successfully');
+  55  |     }
+  56  | 
+  57  |     async updateLastName(newLastName: string) {
+  58  |         Logger.info(`Updating last name to '${newLastName}'`)
+  59  |         await this.lastName.fill('')
+  60  |         await this.lastName.fill(newLastName)
+  61  |         await expect(this.lastName).toHaveValue(newLastName)
+  62  |         Logger.success('Last name field updated successfully');
+  63  |     }
+  64  | 
+  65  |     async checkRadioButton() {
+> 66  |         await this.femaleRadio.check()
+      |                                ^ Error: locator.check: Test timeout of 30000ms exceeded.
+  67  |         await expect(this.femaleRadio).toBeChecked()
+  68  |     }
+  69  | 
+  70  |     async selectMaritalStatus(maritalStatus: string) {
+  71  |         await this.maritalStatusDropdown.click()
+  72  |         const option = this.page.locator(`.oxd-select-dropdown:has-text("${maritalStatus}")`)
+  73  |         await option.click()
+  74  |     }
+  75  | 
+  76  |     async selectDateOfBirth(dateOfBirth: string) {
+  77  |         await this.dateOfBirthInput.fill(dateOfBirth)
+  78  |         await expect(this.dateOfBirthInput).toHaveValue(dateOfBirth)
+  79  |     }
+  80  | 
+  81  |     async verifySuccessToastIsDisplayed() {
+  82  |         await expect(this.successToast).toBeVisible()
+  83  |     }
+  84  | 
+  85  |     async uploadFile(fileName: string) {
+  86  |         await this.addButton.click()
+  87  |         await this.fileInput.setInputFiles(FileUtils.getFilePath(fileName))
+  88  |         await this.saveAttachmentButton.click();
+  89  |     }
+  90  | 
+  91  |     async verifyUploadedFile(fileName: string) {
+  92  |         await expect(this.page.getByText(fileName)).toBeVisible();
+  93  |     }
+  94  | 
+  95  |     async clickSaveButton() {
+  96  |         await this.waitForPageLoad()
+  97  |         await this.saveButton.click()
+  98  |     }
+  99  | 
+  100 | }
+```
